@@ -13,3 +13,5 @@ def contato(request):
 #view exibir_item
 def exibir_item(request, id):
     return render (request, "exibir_item.html", {'id':id})
+def perfil(request, usuario):
+    return render (request, "perfil.html", {'usuario':usuario})
