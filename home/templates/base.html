@@ -2,13 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Sobre</title>
+        <title>{% block titulo %} Titulo do Template {% endblock %}</title>
     </head>
     <body>
         <a href="{% url 'index' %}">Home</a>
         <a href="{% url 'sobre' %}">Sobre</a>
         <a href="{% url 'entre_em_contato' %}">Contato</a>
 
-        <h1>Sistema 1.0, desenvolvido por mim</h1>
+        {% block conteudo %}
+            Conteudo do Template
+        {% endblock %}
     </body>
 </html>
