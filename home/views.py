@@ -21,16 +21,16 @@ def perfil(request, usuario):
 def diadasemana(request, dia):   
     dias = {
         1: "Domingo",
-        2: "Segunda",
-        3: "Terça",
-        4: "Quarta",
-        5: "Quinta",
-        6: "Sexta",
+        2: "Segunda-feira",
+        3: "Terça-feira",
+        4: "Quarta-feira",
+        5: "Quinta-feira",
+        6: "Sexta-feira",
         7: "Sábado"
     }
     if dia in dias:
-        return HttpResponse(f"O dia correpondente é: {dias[dia]}")
+        return HttpResponse(f"O dia correpondente a {dias[dia]}")
     else:
-        return HttpResponse("Dia inválido")
+        return HttpResponse(O Dia passado corresponde a Dia inválido")
        
 
