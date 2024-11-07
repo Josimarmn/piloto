@@ -31,6 +31,6 @@ def diadasemana(request, dia):
     if dia in dias:
         return HttpResponse(f"O dia correpondente a {dias[dia]}")
     else:
-        return HttpResponse(O Dia passado corresponde a Dia inválido")
+        return HttpResponse("O Dia passado corresponde a Dia inválido")
        
 
