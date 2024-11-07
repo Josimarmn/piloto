@@ -18,5 +18,19 @@ def exibir_item(request, id):
 def perfil(request, usuario):
     return render (request, "perfil.html", {'usuario':usuario})
 
-def diadasemana(request, dia):       
-    return render (request, "diasemana.html", {'dia':dia})
+def diadasemana(request, dia):   
+    dias = {
+        1: "Domingo",
+        2: "Segunda",
+        3: "Terça",
+        4: "Quarta",
+        5: "Quinta",
+        6: "Sexta",
+        7: "Sábado"
+    }
+    if dia in dias:
+        return HttpResponse(f"O dia correpondente é: {dias[dia]}")
+    else:
+        return HttpResponse("Dia inválido")
+       
+
