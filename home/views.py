@@ -11,7 +11,12 @@ def sobre(request):
 def contato(request):
     return render(request,'contato.html')
 #view exibir_item
+
 def exibir_item(request, id):
     return render (request, "exibir_item.html", {'id':id})
+
 def perfil(request, usuario):
     return render (request, "perfil.html", {'usuario':usuario})
+
+def diadasemana(request, dia):       
+    return render (request, "diasemana.html", {'dia':dia})
