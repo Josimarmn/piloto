@@ -13,4 +13,5 @@ urlpatterns = [
     path('perfil/<str:usuario>/', views.perfil, name='perfil'),
 
     path('diasemana/<int:dia>/', views.diadasemana, name='diasemana'),
+
 ]
