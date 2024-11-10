@@ -32,5 +32,9 @@ def diadasemana(request, dia):
         return HttpResponse(f"O dia correponde a {dias[dia]}")
     else:
         return HttpResponse("O Dia passado corresponde a Dia inválido")
+
+    def menu(request):
+    return render(request,'menu.html')
+
        
 
