@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+	{%extends 'menu.html'%}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,7 +87,15 @@
         }
     </style>
 </head>
+	
 <body>
+<!-- sidebar -->
+	<div class="sidebar" id= "sidebar">
+		<div class="text-center text-white mb-3">
+			<h3>Cad Web</h3>
+		</div>
+		{%include'menu.html'%}
+	</div>
     <!-- Main Content -->
     <div class="content" id="content">
         <!-- Navbar -->
