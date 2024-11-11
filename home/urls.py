@@ -14,4 +14,6 @@ urlpatterns = [
 
     path('diasemana/<int:dia>/', views.diadasemana, name='diasemana'),
 
+    path('menu', views.index, name="menu"),
+
 ]
