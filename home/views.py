@@ -33,7 +33,7 @@ def diadasemana(request, dia):
     else:
         return HttpResponse("O Dia passado corresponde a Dia inválido")
     
-def menu(request, id):
-    return render(request,'menu.html',{'id':id})
+def menu(request):
+    return render(request,'menu.html','menu.html')
        
 
