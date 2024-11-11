@@ -14,6 +14,6 @@ urlpatterns = [
 
     path('diasemana/<int:dia>/', views.diadasemana, name='diasemana'),
 
-    path('menu', views.menu, name= 'menu'),
+    path('menu/<str:id>', views.menu, name= 'menu'),
 
 ]
